@@ -9,7 +9,10 @@
 input[type=text]{
     display: block;
     border: none;
-    font-size: 20px;
+    font-size: 20pxж
+}
+input[type=text]::before{
+    content: url(../img/);
 }
 ::placeholder{
     font-family: Arial, Helvetica, sans-serif;
