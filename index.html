@@ -10,38 +10,51 @@
 </head>
 
 <body>
-<div class="wrapper">
+<form action="#" method="post">
     <div class="registration_form">
-        <div class="left_side">
-            <form action="#" method="post">
+        <div class="main_field">
+            <div class="left_side">
                 <h3>Registration form</h3>
-
-                <div class="username">
-                    <img src="img/username.png" alt="alt">
-                    <input type="text" id="un" name="usname" placeholder="Username" required>
+                <div class="left_side_username"><img src="img/username.png" alt="alt">
+                    <input type="text" id="un" name="usname" placeholder="Username" pattern="[A-Za-z]" required>
                 </div>
-
-                <div class="email">
-                    <img src="img/email.png" alt="alt">
+                <div class="left_side_email"><img src="img/email.png" alt="alt">
                     <input type="email" id="eml" name="email" placeholder="Email adress" required>
                 </div>
-
-                <div class="password">
-                    <img src="img/pswd.png" alt="alt">
+                <div class="left_side_password"><img src="img/pswd.png" alt="alt">
                     <input type="password" id="pw" name="password" placeholder="Password" required>
-                    <input type="password" id="cpw" name="password" placeholder="Confirm password" required>
+                    <input type="password" id="cpw" name="conf_password" placeholder="Confirm password" required>
                 </div>
+                <div class="left_side_checkbox"><input type="checkbox" id="offers" name="offers" value="first">
+                    <label for="offers">I want to receive mews and special offers</label><br>
+                    <input type="checkbox" id="terms" name="terms" value="secons">
+                    <label for="terms">I agree with the Terms and Conditions</label>
+                </div>
+            </div>
+
+            <div class="right_side">
+                <h3>Personal details</h3>
+                <div class="right_side_name"><input type="text" id="fn" name="first_name" placeholder="First name"
+                                                    pattern="[A-Za-z]" required>
+                    <input type="text" class="ln" name="last_name" placeholder="Last name" pattern="[A-Za-z]"
+                           required>
+                </div>
+                <div class="right_side_checkb_date"><input name="male_female" list="m_f" class="mf">
+                    <datalist id="mf">
+                        <option value="Male" active>
+                        <option value="Female">
+                    </datalist>
+                    <input type="date" name="date" id="dt">
+                </div>
+            </div>
         </div>
-
+        <div class="last_part">
+            <div class="gray_hr"></div>
+            <input type="submit" value="Submit">
+        </div>
     </div>
 
-    <div class="right_side">
-        <form action="#" method="post">
-
-        </form>
-    </div>
-</div>
-</div>
+</form>
 
 </body>
 

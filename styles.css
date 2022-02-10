@@ -1,21 +1,77 @@
-.registration_form{
-    display: flex;
-    margin: 0 auto;
+* {
+    background-color: rgb(243, 243, 243);
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    box-sizing: border-box;
     max-width: 900px;
-    height: 400px;
+    height: 700px;
+    margin: 0 auto;
+}
+.registration_form{
     box-sizing: border-box;
     border: 2px solid darkgray;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .6),
+    23px 0 20px -23px rgba(0, 0, 0, .6),
+    inset 0 0 40px rgba(0, 0, 0, .1);
 }
-input[type=text]{
-    display: block;
+.main_field{
+    display: flex;
+    margin-bottom: 15px;
+}
+img{
+    margin-left: 15px;
+    margin-bottom: -15px;
+}
+.left_side h3{
+    margin-left: 30px;
+}
+.left_side, .right_side{
+    display: inline-block;
+    width: 50%;
+}
+.first_last_name input{
+    width: 40%;
+}
+.ln, .mfd{
+    margin-left: 15px;
+}
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=date],
+.mf{
     border: none;
-    font-size: 20pxж
+    border-bottom: 1px solid darkgray;
+    color: rgb(66, 66, 66);
 }
-input[type=text]::before{
-    content: url(../img/);
+#cpw{
+    margin-left: 15px;
+}
+.left_side img{
+    transform: scale(0.4);
 }
 ::placeholder{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 10px;
     color: rgb(141, 141, 141);
+}
+label{
+    font-size: 10px;
+    color: rgb(66, 66, 66);
+}
+.left_side_checkbox{
+    margin: 15px 0px 0px 28px;
+}
+input[type=submit]{
+    width: 15%;
+    height: 35px;
+    color: #fff;
+    background-color: rgb(94, 163, 151);
+    border-radius: 5%;
+    border: 1px solid darkgray;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    align-content: flex-end;
 }
