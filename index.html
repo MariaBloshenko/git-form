@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" type="text/css" href="media.css.css">
+    <link rel="stylesheet" type="text/css" href="media.css">
     <title>Github+Form</title>
 </head>
 
@@ -26,11 +26,6 @@
                     <input type="password" id="pw" name="password" placeholder="Password" required>
                     <input type="password" id="cpw" name="conf_password" placeholder="Confirm password" required>
                 </div>
-                <div class="left_side_checkbox"><input type="checkbox" id="offers" name="offers" value="first">
-                    <label for="offers">I want to receive mews and special offers</label><br>
-                    <input type="checkbox" id="terms" name="terms" value="secons">
-                    <label for="terms">I agree with the Terms and Conditions</label>
-                </div>
             </div>
 
             <div class="right_side">
@@ -48,10 +43,17 @@
                         <option value="Female">
                     </datalist>
                     <input type="date" name="date" id="dt">
+
                 </div>
             </div>
         </div>
         <div class="last_part">
+            <div class="left_side_checkbox">
+                <input type="checkbox" id="offers" name="offers" value="first">
+                <label for="offers">I want to receive mews and special offers</label><br>
+                <input type="checkbox" id="terms" name="terms" value="secons">
+                <label for="terms">I agree with the Terms and Conditions</label>
+            </div>
             <hr>
             <input type="submit" value="Submit">
         </div>

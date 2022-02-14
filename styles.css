@@ -58,6 +58,7 @@ label{
     color: rgb(66, 66, 66);
 }
 .left_side_checkbox{
+    justify-content: flex-start;
     margin: 15px 0px 0px 28px;
 }
 .right_side{
@@ -67,7 +68,7 @@ label{
     padding-top: 15px;
 }
 .right_side input[type=text]{
-    width: 80%;
+    width: 85%;
 }
 .right_side input[type=text]:nth-child(2){
     margin-top: 20px;
@@ -75,9 +76,8 @@ label{
 .right_side_checkb_date{
     padding-top: 20px;
 }
-.right_side_checkb_date input,
 .left_side_password input[type=password]{
-    width: 39%;
+    width: 39.2%;
 }
 input[type=submit]{
     width: 15%;
