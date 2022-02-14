@@ -23,6 +23,7 @@ form{
 img{
     margin-left: 15px;
     margin-bottom: -15px;
+    transform: scale(0.4);
 }
 .left_side h3{
     margin-left: 30px;
@@ -31,10 +32,7 @@ img{
     display: inline-block;
     width: 50%;
 }
-.first_last_name input{
-    width: 40%;
-}
-.ln, .mfd{
+.mfd{
     margin-left: 15px;
 }
 input[type=text],
@@ -48,13 +46,7 @@ input[type=date],
 }
 .left_side input[type=text],
 .left_side input[type=email]{
-    width: 68%;
-}
-#cpw{
-    margin-left: 15px;
-}
-.left_side img{
-    transform: scale(0.4);
+    width: 80%;
 }
 ::placeholder{
     font-family: Arial, Helvetica, sans-serif;
@@ -68,11 +60,24 @@ label{
 .left_side_checkbox{
     margin: 15px 0px 0px 28px;
 }
+.right_side{
+    margin-left: 10%;
+}
 .right_side_name{
     padding-top: 15px;
 }
+.right_side input[type=text]{
+    width: 80%;
+}
+.right_side input[type=text]:nth-child(2){
+    margin-top: 20px;
+}
 .right_side_checkb_date{
     padding-top: 20px;
+}
+.right_side_checkb_date input,
+.left_side_password input[type=password]{
+    width: 39%;
 }
 input[type=submit]{
     width: 15%;
