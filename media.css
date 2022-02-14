@@ -16,3 +16,29 @@
         width: 85%;
     }
 }
+@media (max-width: 600px) {
+    .main_field {
+        flex-direction: column;
+    }
+    .right_side, .left_side {
+        width: 85%;
+    }
+    .right_side h3{
+        margin-bottom: 0px;
+    }
+    .right_side{
+        margin-top: 30px;
+    }
+}
+@media (max-width: 455px) {
+    .right_side, .left_side {
+        width: 80%;
+    }
+    .left_side input[type=text],
+    .left_side input[type=email]{
+        width: 75%;
+    }
+    .left_side_password input[type=password]{
+        width: 35%;
+    }
+}
